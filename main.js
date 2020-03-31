@@ -76,7 +76,7 @@ var openstreet = L.tileLayer(
 var xhr1 = new XMLHttpRequest();
 //https://script.google.com/macros/s/AKfycbwjsqaSjHfNdaFFW2UaG-CEsxk9o84nG0kZsqp_-chJWF6h02eS/exec
 //https://dl.dropboxusercontent.com/s/2iv2vkdrgtp3v5g/RTA_Mt.json
-xhr1.open('GET', '/Naumaniizou.github.io/RTA_Mt.json', false);
+xhr1.open('GET', 'https://naumaniizou.github.io/RTA_Mt.json', false);
 xhr1.send(null);
 var RTA_ReachedMtlist_Deta = JSON.parse(xhr1.responseText);
 var RTA_ReachedMtlist_marker = L.geoJson(RTA_ReachedMtlist_Deta, {
@@ -114,7 +114,7 @@ var RTA_ReachedMtlist_marker = L.geoJson(RTA_ReachedMtlist_Deta, {
 var xhr2 = new XMLHttpRequest();
 //https://dl.dropboxusercontent.com/s/bqua7vcpnlaqqwe/RTA_Gaiden.json
 //https://script.google.com/macros/s/AKfycbyDe23tUeyxQJCmBvjzU-f9svvxvBzb2rSfZI7ENcGvum5zgApZ/exec
-xhr2.open('GET', 'https://script.google.com/macros/s/AKfycbyDe23tUeyxQJCmBvjzU-f9svvxvBzb2rSfZI7ENcGvum5zgApZ/exec', false);
+xhr2.open('GET', 'https://naumaniizou.github.io/RTA_Gaiden.json', false);
 xhr2.send(null);
 var RTA_ReachedGaidenlist_Deta = JSON.parse(xhr2.responseText);
 var RTA_ReachedGaidenlist_marker = L.geoJson(RTA_ReachedGaidenlist_Deta, {
